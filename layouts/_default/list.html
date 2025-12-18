@@ -3,9 +3,12 @@
 {{ .Content }}
 {{ if not (.IsHome)}} 
 {{ range .Pages }}
-<ul>
-    <li class="home-posts">
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+<ul class="home-posts">
+    <li class="home-post">
+        <span>
+            {{ .Date.Format "01/02/2006" }} | 
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </span>
     </li>
 </ul>
 {{ end }}
