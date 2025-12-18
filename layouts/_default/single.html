@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <div class="post-params">
+        <p>{{ .Params.title }}</p>
+        <p>{{ time.Format "02/01/2006" .Params.date }}</p>
+    </div>
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+{{ end }}

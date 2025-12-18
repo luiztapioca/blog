@@ -1,0 +1,8 @@
+<header>
+    <p>{{ .Site.Title }}</p>
+    <ul>
+        {{ with .Site.Params.pages }}
+            {{ .title }}
+        {{ end }}
+    </ul>
+</header>
