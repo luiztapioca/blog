@@ -1,9 +1,8 @@
-<h2 class="header-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h2>
+<span class="header-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></span>
 <ul class="header-sections">
 {{ $currentPage := .}}
 {{ range .Site.Menus.main }}
-    <li class="header-section {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-        <a href="{{ .URL }}">
+    <li class="header-section {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}">        <a href="{{ .URL }}">
             {{ .Name }}
         </a>
     </li>

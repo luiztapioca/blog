@@ -14,6 +14,10 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 for i in range(10):
     print(i)
 ```
-$$test 1234$$
-
+$$
+(
+  \int_a^b \! f(x) \, dx = \lim_{\Delta x \rightarrow 0}
+  \sum_{i=1}^{n} f(x_i) \,\Delta x_i
+)
+$$
 ![tapioca](img/tapioca.jpg)
