@@ -22,3 +22,14 @@ markup:
     style: 'rrt'
     lineNos: true
     noClasses: false
+
+menus:
+  main:
+    - identifier: 'posts'
+      name: 'Posts'
+      url: '/posts/'
+      weight: 2
+    - identifier: 'about'
+      name: 'About'
+      url: '/about/'
+      weight: 3

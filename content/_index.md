@@ -16,5 +16,4 @@ for i in range(10):
 ```
 $$test 1234$$
 
-> [!WARNING]+ Radiation hazard
-> Do not approach or handle without protective gear.
+![tapioca](img/tapioca.jpg)
