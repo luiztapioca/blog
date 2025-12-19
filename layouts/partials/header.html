@@ -1,11 +1,26 @@
-<span class="header-title"><a href="{{ "/blog/" | relURL }}">{{ .Site.Title }}</a></span>
+<span class="header-title"><a href="{{ .Site.BaseURL | relURL }}">{{ .Site.Title }}</a></span>
 <span class="header-separator">~</span>
 <ul class="header-sections">
 {{ $currentPage := .}}
 {{ range .Site.Menus.main }}
-    <li class="header-section {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}"><a href="{{ .URL }}">
+    <li class="header-section {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}"><a href="{{ .URL | relURL }}">
             {{ .Name }}
         </a>
+    </li>
+{{ end }}
+{{ if .Site.IsMultiLingual }}
+    <li class="header-section language-switcher">
+    {{ range .Site.Languages }}
+        {{ if eq . $.Site.Language }}
+            <span class="lang-active">{{ .LanguageName }}</span>
+        {{ else }}
+            {{ if $.IsTranslated }}
+                <a href="{{ $.Permalink | relLangURL .Lang }}">{{ .LanguageName }}</a>
+            {{ else }}
+                <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+            {{ end }}
+        {{ end }}
+    {{ end }}
     </li>
 {{ end }}
 </ul>

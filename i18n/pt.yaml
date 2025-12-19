@@ -21,3 +21,30 @@
 
 - id: categories
   translation: "Categorias"
+
+- id: date
+  translation: "Data"
+
+- id: readingTime
+  translation: "Tempo de leitura"
+
+- id: wordCount
+  translation: "Palavras"
+
+- id: author
+  translation: "Autor"
+
+- id: publishedOn
+  translation: "Publicado em"
+
+- id: lastModified
+  translation: "Última modificação"
+
+- id: backToHome
+  translation: "Voltar ao início"
+
+- id: notFound
+  translation: "Página não encontrada"
+
+- id: notFoundMessage
+  translation: "A página que você procura não existe."
