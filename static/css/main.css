@@ -19,7 +19,7 @@ header{display:flex-inline;align-items: center;margin: 0 0 -0.5rem 0;}
 .header-title a,a:visited{text-decoration:none;color:var(--link-color);}
 .header-sections {gap:1rem;list-style-type:none;padding:0;margin:0; display:inline-flex;}
 .header-section a {text-decoration:none;color:var(--link-color)!important;}
-.home-post a,a:visited{text-decoration:none;color:var(--link-visited-color)!important;}
+.home-post a,a:visited{color:var(--link-visited-color)!important;}
 .home-posts{list-style:none; margin-left: -2.5rem;}
 .header-separator{margin:0 1rem 0 1rem;}
 
