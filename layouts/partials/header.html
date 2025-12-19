@@ -15,9 +15,13 @@
             <span class="lang-active">{{ .LanguageName }}</span>
         {{ else }}
             {{ if $.IsTranslated }}
-                <a href="{{ $.Permalink | relLangURL .Lang }}">{{ .LanguageName }}</a>
+                {{ with $.Translations.ByLanguage .Lang }}
+                    <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+                {{ else }}
+                    <a href="{{ relLangURL .Lang }}">{{ .LanguageName }}</a>
+                {{ end }}
             {{ else }}
-                <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+                <a href="{{ relLangURL .Lang }}">{{ .LanguageName }}</a>
             {{ end }}
         {{ end }}
     {{ end }}
