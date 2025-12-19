@@ -1,11 +1,11 @@
-baseURL: 'https://example.org/'
-languageCode: 'en-us'
+baseURL: 'https://boot.tec.br/blog/'
+languageCode: 'pt-br'
 title: 'hugo.tapioca'
-defaultContentLanguage: 'en'
+defaultContentLanguage: 'pt'
 
 params:
   author:
-    name: 'Seu nome'
+    name: 'Luiz Gustavo'
 
 languages:
   en:
