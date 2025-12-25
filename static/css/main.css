@@ -9,7 +9,7 @@ body{max-width:800px;margin:auto;padding: 1em;line-height:1.5;}
 .post-params{display:inline;line-height:normal;margin: 0 0 0 0;}
 .post-params-separator{margin:0 0.5em 0 0.5em;}
 .post-params-title{font-weight:bolder;}
-.post-params-date{font-style:italic;color:var(--link-color);margin-top: -0.5rem;}
+.post-params-date{font-style:italic;color:var(--link-color);}
 .post-content{margin-top:0 0 -1rem 0;}
 
 .posts-date{font-style:italic;}
