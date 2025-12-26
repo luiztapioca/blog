@@ -41,17 +41,19 @@ hr{margin: 1em 0 1em 0;border:1px solid var(--font-color);}
 
 h1,h2,h3,h4,h5,h6{margin:1.5em 0 0.5em 0;line-height:1.2;}
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.875rem;}
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1.0rem; }
+h4 { font-size: 0.75rem; }
+h5 { font-size: 0.5rem; }
+h6 { font-size: 0.25rem;}
+
+p { font-size: 0.875rem;}
 
 a{color:var(--link-color);text-decoration:none;}
 a:hover{text-decoration:underline;}
 a:visited{color:var(--link-visited-color);}
-code{font-size:11px;font-family: 'Google Sans Code', monospace;background-color:#202020;padding: 0.1em 0.3em 0.1em 0.3em;border-radius:4px;}
+code{font-size:0.875rem;font-family: 'Google Sans Code', monospace;background-color:#202020;padding: 0.1em 0.3em 0.1em 0.3em;border-radius:4px;}
 pre code{background-color:transparent;padding:0;margin:0;white-space:pre;display:block;}
 pre{background-color:transparent;padding:1em;overflow-x:auto;overflow-y:hidden;border-radius:8px;max-width:100%;width:100%;box-sizing:border-box;}
 .highlight{overflow-x:auto;overflow-y:hidden;max-width:100%;width:100%;}
